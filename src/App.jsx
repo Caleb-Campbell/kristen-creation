@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from '../public/react.svg'
 import './App.css'
 import title from '../assets/logos/1.png'
 
@@ -8,7 +8,9 @@ function App() {
 
   return (
     <div  className="App">
+      <div className='title-img-wrapper'>
       <img src={title} alt='Main logo for Kristens creations;' />
+      </div>
     </div>
   )
 }
