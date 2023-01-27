@@ -1,17 +1,22 @@
 import { useState } from 'react'
 import reactLogo from '../public/react.svg'
-import './App.css'
 import title from '../assets/logos/1.png'
+import Title from './components/Title'
+import { Stack } from 'react-bootstrap'
+import Nav from './components/NavBar'
+import About from './components/About'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div  className="App">
-      <div className='title-img-wrapper'>
-      <img src={title} alt='Main logo for Kristens creations;' />
-      </div>
-    </div>
+    <>
+    <Nav />
+    <Stack>
+    <Title />
+    <About />
+    </Stack>
+    </>
   )
 }
 
