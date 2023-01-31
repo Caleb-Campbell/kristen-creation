@@ -17,29 +17,30 @@ export default function Gallery() {
         '../../assets/gallery images/k.jpg',
         '../../assets/gallery images/l.jpg',
         '../../assets/gallery images/m.jpg',
-        '../../assets/gallery images/n.jpg',
-        '../../assets/gallery images/o.jpg',
-        '../../assets/gallery images/p.jpg',
-        '../../assets/gallery images/q.jpg',
-        '../../assets/gallery images/r.jpg',
-        '../../assets/gallery images/s.jpg',
-        '../../assets/gallery images/t.jpg',
-        '../../assets/gallery images/u.jpg',
-        '../../assets/gallery images/v.jpg',
-        '../../assets/gallery images/w.jpg',
-        '../../assets/gallery images/x.jpg',
-        '../../assets/gallery images/y.jpg',
-        '../../assets/gallery images/z.jpg',
-        '../../assets/gallery images/aa.jpg',
-        '../../assets/gallery images/ab.jpg',
-        '../../assets/gallery images/ac.jpg',
+        // '../../assets/gallery images/n.jpg',
+        // '../../assets/gallery images/o.jpg',
+        // '../../assets/gallery images/p.jpg',
+        // '../../assets/gallery images/q.jpg',
+        // '../../assets/gallery images/r.jpg',
+        // '../../assets/gallery images/s.jpg',
+        // '../../assets/gallery images/t.jpg',
+        // '../../assets/gallery images/u.jpg',
+        // '../../assets/gallery images/v.jpg',
+        // '../../assets/gallery images/w.jpg',
+        // '../../assets/gallery images/x.jpg',
+        // '../../assets/gallery images/y.jpg',
+        // '../../assets/gallery images/z.jpg',
+        // '../../assets/gallery images/aa.jpg',
+        // '../../assets/gallery images/ab.jpg',
+        // '../../assets/gallery images/ac.jpg',
     ]
 
   return (
     <>
-    <Carousel>
+    <h2 className='text-center'>Gallery</h2>
+    <Carousel className='mb-4' style={{width: '50%', margin: '0 auto'}}>
         {photos.map(photo => {
-            return (<Carousel.Item key={photo} > <Image  style={{width: '100%'}} src={photo} /> </Carousel.Item>)
+            return (<Carousel.Item key={photo} > <Image rounded={true} style={{width: '100%', margin: '0 auto'}} src={photo} /> </Carousel.Item>)
         })}
     </Carousel>
     </>

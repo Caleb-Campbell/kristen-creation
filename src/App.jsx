@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Nav />
-    <Stack>
+    <Stack gap={5}>
     <Title />
     <About />
     <Gallery />
