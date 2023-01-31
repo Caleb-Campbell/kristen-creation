@@ -1,6 +1,8 @@
 import React from 'react'
 import { Nav, Stack, Button, Image, ButtonGroup } from 'react-bootstrap'
 
+import logo from '../../assets/logos/transparent.png'
+
 export default function NavBar() {
 
   // const handleClick = (e) => {
@@ -10,8 +12,8 @@ export default function NavBar() {
 
 
   return (
-    <Nav id='nav' className={`justify-content-between p-3 `}>
-      <h2>Logo</h2>
+    <Nav  id='nav' className='justify-content-between p-3 m-3 position-sticky-top'>
+      <Image src={logo} />
     <Stack direction='horizontal'>
     <Nav.Item>
       <Nav.Link href="#about">About</Nav.Link>
