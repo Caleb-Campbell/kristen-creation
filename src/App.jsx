@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { Stack } from 'react-bootstrap'
+import { Stack, Container } from 'react-bootstrap'
 //  components
 import Title from './components/Title'
 import Nav from './components/NavBar'
 import About from './components/About'
 import Gallery from './components/Gallery'
+// import './app.css'
 
 function App() {
   const [count, setCount] = useState(0)
