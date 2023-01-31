@@ -3,9 +3,9 @@ import { Nav, Stack, Button, Image, ButtonGroup } from 'react-bootstrap'
 
 export default function NavBar() {
 
-  const handleClick = (e) => {
-    setDarkMode(!darkMode)
-  }
+  // const handleClick = (e) => {
+  //   setDarkMode(!darkMode)
+  // }
 
 
 

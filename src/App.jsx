@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import reactLogo from '../public/react.svg'
-import title from '../assets/logos/1.png'
-import Title from './components/Title'
 import { Stack } from 'react-bootstrap'
+//  components
+import Title from './components/Title'
 import Nav from './components/NavBar'
 import About from './components/About'
+import Gallery from './components/Gallery'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +15,7 @@ function App() {
     <Stack>
     <Title />
     <About />
+    <Gallery />
     </Stack>
     </>
   )

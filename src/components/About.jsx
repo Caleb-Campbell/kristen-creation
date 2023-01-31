@@ -5,9 +5,8 @@ export default function About() {
   return (
     <Container>
         <h2 className='text-center'>About Me:</h2>
-        <Stack direction='horizontal'>
+        <Stack gap={5} direction='horizontal'>
         <div>
-            <Image />
         </div>
         <div>
             
