@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Contact() {
   return (
     <>
-      <Stack className="w-100 bg-dark text-center text-light">
+      <Stack id="contact" className="w-100 bg-cream text-center text-light">
         <h2 className="divider text-light text-center">Contact</h2>
         <Container>
           <Row md="sm-6" className="justify-content-center">

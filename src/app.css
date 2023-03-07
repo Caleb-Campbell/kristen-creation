@@ -3,12 +3,23 @@
     background-color: #cec0c0;
 }
 
+.text-fonted {
+    font-family: 'Libre Baskerville', serif;
 
-
+}
 
 
 body {
     margin: 0;
+    background-color: #cec0c0;
+}
+
+:root {
+    background-color: #cec0c0;
+}
+
+.services {
+    width: 95%;
 }
 
 .divider {
@@ -17,12 +28,15 @@ body {
 
 
 .topnav-logo {
-    width: 10%;
+    width: 20%;
     scale: 2;
+    
 }
 
 .main-title {
-    font-size: 3.5em;
+    font-size: 2em;
+    font-family: 'Libre Baskerville', serif;
+   
 }
 
 .phone {
@@ -45,13 +59,19 @@ body {
 }
 
 @media (max-width: 500px) {
-    .topnav-logo {
 
-    }
 }
 
 @media (min-width: 500px) {
     .caro {
+        width: 50%;
+    }
+
+    .family {
+        width: 50%;
+    }
+
+    .about {
         width: 50%;
     }
 }

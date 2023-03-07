@@ -19,12 +19,12 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="bg-cream">
-      <h2 className="text-center divider bg-cream">Gallery</h2>
+    <div id="gallery" className="bg-cream">
+      <h2 className="text-center divider bg-cream text-muted">Gallery</h2>
       <Carousel className="mx-auto caro bg-cream">
-        {photos.map((photo) => {
+        {photos.map((photo, index) => {
           return (
-            <Carousel.Item key={photo} className="text-center bg-cream">
+            <Carousel.Item key={index} className="text-center bg-cream">
               {" "}
               <Image style={{ width: "95%" }} rounded={true} src={photo} />{" "}
             </Carousel.Item>
