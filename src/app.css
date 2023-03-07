@@ -1,3 +1,57 @@
+
+.bg-cream {
+    background-color: #cec0c0;
+}
+
+
+
+
+
 body {
     margin: 0;
+}
+
+.divider {
+    font-size: 3em;
+}
+
+
+.topnav-logo {
+    width: 10%;
+    scale: 2;
+}
+
+.main-title {
+    font-size: 3.5em;
+}
+
+.phone {
+    font-size: 3em;
+}
+
+.email {
+    font-size: 4em;
+}
+
+.spacer {
+    height: 30vh;
+    background-color: #cec0c0;
+}
+
+.splash {
+    background-image: url('../assets/splash/splash.jpg');
+    background-size: cover;
+    height: 90vh;
+}
+
+@media (max-width: 500px) {
+    .topnav-logo {
+
+    }
+}
+
+@media (min-width: 500px) {
+    .caro {
+        width: 50%;
+    }
 }

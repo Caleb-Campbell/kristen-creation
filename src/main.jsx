@@ -1,6 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { ThemeProvider } from "react-bootstrap";
 
 // import 'bootswatch/dist/cerulean/bootstrap.min.css'
 // import 'bootswatch/dist/cosmo/bootstrap.min.css'
@@ -10,7 +11,7 @@ import App from './App'
 // import 'bootswatch/dist/journal/bootstrap.min.css'
 // import 'bootswatch/dist/litera/bootstrap.min.css'
 // import 'bootswatch/dist/lumen/bootstrap.min.css'
-import 'bootswatch/dist/lux/bootstrap.min.css'
+import "bootswatch/dist/lux/bootstrap.min.css";
 // import 'bootswatch/dist/materia/bootstrap.min.css'
 // import 'bootswatch/dist/minty/bootstrap.min.css'
 // import 'bootswatch/dist/morph/bootstrap.min.css'
@@ -28,9 +29,15 @@ import 'bootswatch/dist/lux/bootstrap.min.css'
 // import 'bootswatch/dist/yeti/bootstrap.min.css'
 // import 'bootswatch/dist/zephyr/bootstrap.min.css'
 
+import "../src/custom.scss";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider
+      breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+      minBreakpoint="xxs"
+    >
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
-)
+);
